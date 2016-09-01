@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lg7-d3-PHb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="o0X-mV-7sN">
+            <objects>
+                <navigationController storyboardIdentifier="SearchNC" automaticallyAdjustsScrollViewInsets="NO" id="lg7-d3-PHb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" id="xjc-lP-NM3"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nUB-8C-ZbX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2ky-p5-yGO" kind="relationship" relationship="rootViewController" id="WJ0-hw-Meu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atM-sj-sq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="633"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="gD4-Yb-xCf">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" id="2ky-p5-yGO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z9G-kf-BB6"/>
+                        <viewControllerLayoutGuide type="bottom" id="PG3-bf-0Hi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4lr-qR-SIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IRp-Gf-vW1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AeS-Op-5Qz">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRp-Gf-vW1" firstAttribute="top" secondItem="Z9G-kf-BB6" secondAttribute="bottom" id="Azf-z4-Neq"/>
+                            <constraint firstItem="PG3-bf-0Hi" firstAttribute="top" secondItem="IRp-Gf-vW1" secondAttribute="bottom" id="T0K-fI-rgp"/>
+                            <constraint firstItem="IRp-Gf-vW1" firstAttribute="leading" secondItem="4lr-qR-SIQ" secondAttribute="leading" id="nut-CT-zcC"/>
+                            <constraint firstAttribute="trailing" secondItem="IRp-Gf-vW1" secondAttribute="trailing" id="uja-8M-vAb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SearchVC" id="LD7-gL-9wS">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="M8p-jk-Bed"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIa-LW-hzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="715" y="633"/>
+        </scene>
+    </scenes>
+</document>

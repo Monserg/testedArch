@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--BarcodeVC-->
+        <scene sceneID="bWv-Op-evW">
+            <objects>
+                <viewController storyboardIdentifier="BarcodeVC" id="9dE-GL-Fc3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bRh-Tf-BSf"/>
+                        <viewControllerLayoutGuide type="bottom" id="1qB-sh-Hq1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NMo-6d-906">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BarcodeVC" id="6l3-pk-IgQ">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="uZm-ER-jrv"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meV-Jl-BSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="-113"/>
+        </scene>
+        <!--Barcode-->
+        <scene sceneID="GT5-n1-hUY">
+            <objects>
+                <navigationController storyboardIdentifier="BarcodeNC" automaticallyAdjustsScrollViewInsets="NO" id="cu2-iv-f8k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Barcode" id="4dv-jF-Tqm"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aWM-rr-BYN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9dE-GL-Fc3" kind="relationship" relationship="rootViewController" id="o8O-JS-TRX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaf-Qf-nll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-113"/>
+        </scene>
+    </scenes>
+</document>

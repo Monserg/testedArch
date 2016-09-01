@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O8i-dC-oPp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--FavoriteVC-->
+        <scene sceneID="PGF-I2-Idg">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteVC" id="c7U-rh-PrW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DYS-sc-1XW"/>
+                        <viewControllerLayoutGuide type="bottom" id="WEl-cD-ECA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zzl-1c-cEj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="FavoriteVC" id="8p4-Pm-O78">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="zpE-Tf-GVx"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IJM-FI-Voh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811" y="1373"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="af7-5C-k0z">
+            <objects>
+                <navigationController storyboardIdentifier="FavoriteNC" automaticallyAdjustsScrollViewInsets="NO" id="O8i-dC-oPp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" id="Wnx-pe-2il"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Qa-MI-Mg2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c7U-rh-PrW" kind="relationship" relationship="rootViewController" id="GI6-bc-yU0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oma-Fy-kiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="1373"/>
+        </scene>
+    </scenes>
+</document>
